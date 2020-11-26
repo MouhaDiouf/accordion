@@ -7,11 +7,15 @@ function SingleQuestion({ title, info }) {
     setToggle(!toggle);
   };
   return (
-    <div className="question">
-      <p>{title}</p>
-      <p>{toggle ? info : info.substring(0, 100) + '...'}</p>
-      <button onClick={toggleText}>See more</button>
-    </div>
+    <article className="question">
+      <header>
+        <h4>{title}</h4>
+        <button className="btn" onClick={toggleText}>
+          {toggle ? <AiOutlineMinus /> : <AiOutlinePlus />}
+        </button>
+      </header>
+      <p>{toggle && info}</p>
+    </article>
   );
 }
 
