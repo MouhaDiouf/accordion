@@ -1,4 +1,4 @@
-# Building a review app with React
+# Building an Q&A page with React
 ![screenshot](./src/screenshot.jpg)
 
 
